@@ -3,6 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. automodapi:: my_package.example
+
 Welcome to my_package's documentation!
 ======================================
 
