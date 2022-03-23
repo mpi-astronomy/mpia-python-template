@@ -8,5 +8,4 @@ else:
 try:
     __version__ = metadata.version(__package__ or __name__)
 except:
-    __version__ = "0.0.0"
-
+    __version__ = "dev"
