@@ -1,6 +1,4 @@
-We expect all MPIA organization projects to adopt a code of conduct
-that ensures a productive, respectful environment for all open source
-contributors and participants. We are committed to providing a strong and
+We are committed to providing a strong and
 enforced code of conduct and expect everyone in our community to follow these
 guidelines when interacting with others in all forums. Our goal is to keep ours
 a positive, inclusive, successful, and growing community. The community of
@@ -9,94 +7,30 @@ around the globe with a diverse set of skills, personalities, and experiences.
 It is through these differences that our community experiences success and
 continued growth.
 
-The Max Planck Society expects all staff, scientists, directors,
-guests, and partners to adhere to the following principles:
+As members of the `mpi-astronomy` community:
 
-1. Our mission is to conduct cutting-edge, fundamental
-research for the benefit of all humankind, in keeping with
-our motto: „Insight must precede application“.
-The Max Planck Society looks back on a long tradition
-of performing high-risk highreward fundamental research.
-We are committed to giving our scientists the best
-possible conditions for conducting their research in our
-Institutes. Despite the diverse research interests of our
-scientists, we all pursue a common goal: understanding
-the world around us for the benefit of all humankind.
+1. We pledge to treat all people with respect and provide a harassment- and bullying-free environment, regardless of sex, sexual orientation and/or gender identity, disability, physical appearance, body size, race, nationality, ethnicity, and religion. In particular, sexual language and imagery, sexist, racist, or otherwise exclusionary jokes are not appropriate.
+2. We pledge to respect the work of others by recognizing acknowledgment/citation requests of original authors. As authors, we pledge to be explicit about how we want our own work to be cited or acknowledged.
+3. We pledge to welcome those interested in joining the community, and realize that including people with a variety of opinions and backgrounds will only serve to enrich our community. In particular, discussions relating to pros/cons of various technologies, programming languages, and so on are welcome, but these should be done with respect, taking proactive measure to ensure that all participants are heard and feel confident that they can freely express their opinions.
+4. We pledge to welcome questions and answer them respectfully, paying particular attention to those new to the community. We pledge to provide respectful criticisms and feedback in forums, especially in discussion threads resulting from code contributions.
+5. We pledge to be conscientious of the perceptions of the wider community and to respond to criticism respectfully. We will strive to model behaviors that encourage productive debate and disagreement, both within our community and where we are criticized. We will treat those outside our community with the same respect as people within our community.
+6. We pledge to help the entire community follow the code of conduct, and to not remain silent when we see violations of the code of conduct. We will take action when members of our community violate this code such as such as contacting conduct@stsci.edu (all emails sent to this address will be treated with the strictest confidence) or talking privately with the person.
+This code of conduct applies to all community situations online and offline, including mailing lists, forums, social media, conferences, meetings, associated social events, and one-to-one interactions.
 
-2. We treat each other with respect and do not tolerate
-any forms of discrimination based on ethnicity, gender,
-disability, religion or belief, age or sexual orientation
-or identity.
-Discrimination has no place in the Max Planck Society:
-not in the lab, not in the workshop, the office or during the
-hiring process. We believe that science is a diverse
-endeavor: diversity provides new impulses, new ideas,
-new perspectives and innovation.
+All Max Planck researchers are bound to adhere to the 
+[Max Plack Society Code of Conduct](https://www.mpg.de/14172230/code-of-conduct.pdf). 
+All MPIA employees should attach importance to creating a respectful and healthy atmosphere 
+and a level playing field for research and work. The goal is to ensure good working conditions 
+for everyone and to provide the basis for individual job satisfaction, personal development, 
+motivation, collegiality and positive interpersonal relations. The MPIA Code of Conduct is 
+specified in the MPIA Work Agreement.
 
-3. We conduct our research and support the research
-of others with integrity and according to the highest
-scientific standards.
-We are committed to scientific integrity and abiding by
-the guidelines of good scientific practice. We value
-scientific quality over quantity. To monitor our progress
-and standards, we invite external experts (Scientific
-Advisory Board) on a regular basis to evaluate the quality
-of our research and the state of our Institutes.
+**Reporting**: Any violations of the Code of Conduct should be reported to the 
+[MPIA Ombudsperson](https://www2.mpia-hd.mpg.de/homes/fendt/ombud.html). If this information
+is not available, please reach out to the owners of the [`mpi-astronomy` GitHub organization](https://github.com/mpi-astronomy). 
 
-4. We discuss problems and implement solutions openly
-and respectfully; we communicate the principles and
-processes that underlie our actions and decisions.
-We are committed to providing a work environment within
-our Institutes in which all employees feel valued and know
-they can address problems openly without fear of reprisal.
-When issues arise within the Institute or the Society,
-we discuss them openly and respectfully with the goal
-of finding a solution amenable to all parties.
+Parts of this code of conduct have been adapted from the Astropy and NumFOCUS codes of conduct:
 
-5. We recognize the achievements of others, give
-credit where it is due and offer constructive feedback
-when necessary.
-Science and innovation depend on an open and constructive discourse in which new ideas can be freely exchanged
-and old wisdoms challenged. Thus, we discuss our
-research openly and criticize constructively. We give credit
-to those who help us with their ideas and their criticism.
-We recognize that the people who support our scientists in
-the labs, the administration and the workshops are integral
-to the success of the Max Planck Society. We take pride in
-the achievements of the scientists and staff of the
-Institutes and the Society. 
+https://www.astropy.org/code_of_conduct.html
+https://www.numfocus.org/about/code-of-conduct/
 
-6. We support each other in achieving our goals by nurturing
-trust and cooperation, and by respecting individual
-capabilities and needs.
-We are aware that research is often highly competitive and
-people can feel under pressure to produce results.
-Because of these circumstances, we are committed to
-being mindful of personal boundaries and contributing
-to a nurturing work environment based on trust and mutual
-respect. 
-
-7. We honor our responsibilities towards our colleagues,
-employees, the public, and the environment by acting
-supportively and sustainably.
-We are committed to supporting each other scientifically,
-in matters of leadership and mentoring, as well as career
-development. We are aware that our research is predominantly funded by the taxpayer and respect the boundary
-conditions of public funding. Whenever possible we pledge
-to conduct our research in an environmentally sustainable
-fashion. 
-
-8. We communicate openly and transparently with each
-other and with the public.
-Scientific discovery must be communicated in order for it
-to be valued by the public. Since we are predominantly
-funded by the public while also benefitting from private
-donations, we see it as our obligation to inform the public
-openly and transparently about our research. We use many
-different channels for our public outreach: newspa-pers,
-websites, social media, public lectures, tours of the
-Institutes or educational programs.
-
-Any violations of the Code of Conduct should be reported to the 
-MPIA GitHub organizations owners, 
-MPIA conflict coaches, directors or equal opportunity officers. 
