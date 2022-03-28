@@ -19,7 +19,7 @@ jobs:
     - name: setup python
       working-directory: ./
       run: |
-        pip install .
+        pip install ".[docs]"
 
     - name: Build docs
       uses: ammaraskar/sphinx-action@master
