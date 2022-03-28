@@ -19,6 +19,8 @@ jobs:
     - name: setup python
       working-directory: ./
       run: |
+        pip install --upgrade pip
+        pip install .
         pip install ".[docs]"
 
     - name: Build docs
