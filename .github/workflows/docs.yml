@@ -1,14 +1,13 @@
 name: sphinxdocumentation
 
-on:
-  push:
-    branches:    
-      - master
+on: [push, pull_request]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    strategy:
+      python-version: "3.8"
 
     steps:  
     - name: Checkout code
