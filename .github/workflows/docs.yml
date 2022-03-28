@@ -6,8 +6,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    strategy:
-      python-version: "3.8"
+#    strategy:
+#      python-version: "3.8"
 
     steps:  
     - name: Checkout code
