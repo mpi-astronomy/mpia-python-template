@@ -36,6 +36,7 @@ jobs:
     # Publish built docs to gh-pages branch.
     # ===============================
     - name: Commit documentation changes
+      working-directory: ./
       run: |
         git clone https://github.com/ammaraskar/sphinx-action-test.git --branch gh-pages --single-branch gh-pages
         cp -r doc/_build/html/* gh-pages/
