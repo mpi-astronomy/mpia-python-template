@@ -146,7 +146,7 @@ To check for compliance with the Python style guide, fun `flake8`:
 flake8
 ```
 
-This repository come pre-set with contonuous integration using GitHub Actions. Every time you push a commit or make a pull request, all tests will be automatically run by GitHub. On the GitHub page for your repository you should have an `Action` tab (forth from the left). This tab will show you the test results. You can disable/enable actions as shown [here](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow). 
+This repository come pre-set with contonuous integration using GitHub Actions. Every time you push a commit or make a pull request, all tests will be automatically run by GitHub. On the GitHub page for your repository you should have an `Action` tab (forth from the left). This tab will show you the test results. While you can (and should) run the test suite locally, these runs are usually only on your operating system against one version of python. The advantage of CI is that you can test your code against different versions of python, different versions of key libraries and different operating systems. Here we have set up a simple test matrix which run against four different versions of python. You can make the CI more complex if you need. You can disable/enable actions as shown [here](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow) or by deleting the `.github/workflows/ci.yml` file. 
 
 **Creating documentation**
 
@@ -161,4 +161,4 @@ open _build/html/index.html
 ```
 `sphinx` can also generate a PDF of your docs, but this is left as an exercise for the user.
 
-This repository is also set to auto-generate an HTML page with the documentation. The example documentation page for this repository can be found at [https://mpi-astronomy.github.io/mpia-python-template/](https://mpi-astronomy.github.io/mpia-python-template/).
+This repository is also set to auto-generate an HTML page with the documentation. The example documentation page for this repository can be found at [https://mpi-astronomy.github.io/mpia-python-template/](https://mpi-astronomy.github.io/mpia-python-template/). You can disable/enable the auto-generated documentation builds as shown [here](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow) or by deleting the `.github/workflows/docs.yml` file. To unpublish the documentation page, you also need to delete the `gh-pages` branch, see instructions [here](https://docs.github.com/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site#unpublishing-a-project-site).
