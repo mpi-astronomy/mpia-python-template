@@ -13,10 +13,14 @@
 
 cff-version: 1.2.0
 title: my_package
-message: This is a citation.
+message: If you use this software, please cite as below.
+date-released: 2022-03-29
+url: 'https://github.com/mpi-astronomy/mpia-python-template'
+version: 0.0.1
 type: software
 authors:
-  - given-names: Author Name
+  - family-names: Name
+    given-names: Author
     email: author.name@email.com
     affiliation: MPIA
     orcid: 'https://orcid.org/0000-0000-0000-0000'
