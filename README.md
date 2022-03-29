@@ -7,6 +7,8 @@ Documentation templates with `sphinx` which automatically pull the API informati
 
 This template does not assume GitHub tags, it is not set up for PyPi releases and it does not produce ReadTheDocs documentation, however such extensions can be easily added on to the template by motivated users. Please contact the template authors if you need help with these tasks.
 
+There is a lot of (sometimes contradictory) information on how to package a Python project. Here we have generally followed the [current recommendations](https://packaging.python.org/en/latest/tutorials/packaging-projects/) of the Python Packaging Authority. 
+
 # How to Use This Template
 
 Click on the green "Use This Template" button in the upper right corner of the screen to make a copy of the template.
@@ -80,7 +82,7 @@ git mv my_package new_package_name
 
 2. If you are an MPIA employee, do not change the `CODE_OF_CONDUCT.md` file.
 
-3. You should not have to change `pyproject.toml` (unless you know what you are doing). In this setup you do not need to have `setup.py` or `requirements.txt` files. If you catch yourself creating these files, you have not followed the instructions. 
+3. You should not have to change `pyproject.toml` (unless you know what you are doing). In this setup you do not need to have `setup.py` or `requirements.txt` files. All your requirements should be listed in the `setup.cfg` file. If you have a more complex package that requires that things happen at installation, you may also need to create a `setup.py` file, but we are going to keep things here simple.  
 
 # Then What?
 
