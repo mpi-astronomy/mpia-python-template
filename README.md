@@ -126,8 +126,14 @@ git push
 
 `git` will not keep track of the files that `pip` creates during the installation, but once in a while it may be useful to clear them out and run `pip install -e .` again. The following command will delete all temporary files that `git` is not tracking:
 ```
-git clean -xdf
+git status
 ```
+Absolutely do make sure you do not have untracked files that you want to keep. If you do, commit them before you run the next command.
+```
+git clean -xdf
+pip install -e .
+```
+
 
 **Testing your code**
 
