@@ -17,7 +17,7 @@ Select a name for your reporsitory, select if it should be Public (recommended) 
 
 Click on the Create Repository from Template button.
 
-# Customize the Tempate
+# Customize the Tempate in 7 Easy Steps
 
 0. Create a new  `conda` environment for your project. This will allow you to track dependencies a lot easier.
 
@@ -51,7 +51,7 @@ project_urls =
 
 The `name` here will be the name of your package, it does not have to be the same as the name of the repository (as shown here). This will be the name used to import your package once installed. 
 
-The `version` variable must be manually incremented. Do not set versions elsewhere in the package. 
+The `version` variable must be manually incremented. There are only two places where you should set the version: here and in the `CITATION.cff` file (see below). Make sure you increment them both.  
 
 As you develop your code, you will need to specify any dependencies. Add any new dependencies after 
 line 28 in `setup.cfg`. 
@@ -66,13 +66,13 @@ cd src/
 git mv my_package new_package_name
 ```
 
-4. Add your code to the `src/new_package_name/` directory. All your code should be `*.py` files in this directory. Do not add other directories inside `src/` unless you know what you are doing. Add your tests to the `tests/` directory. Edit the `docs\index.rst` file to create documentation for your project. 
+4. Edit the `README.md`. Add a short description of your package instead of this text.
 
-5. If/when you want to update the auto-generated `sphinx` documentation, you can edit the `docs/index.rst` file. This file is in `reStructuredText` format. More information on making your docs pretty is available in the [`sphinx` docs](https://www.sphinx-doc.org/en/master/tutorial/index.html). See below on how to generate the documentation locally. This repository is set to auto-generate an HTML page with the documentation. The example documentation page for this repository can be found at [https://mpi-astronomy.github.io/mpia-python-template/](https://mpi-astronomy.github.io/mpia-python-template/).
+5. Edit the `CITATION.cff` file to specify how you want your code cited. The `CITATION.cff` file allows you to generate a `BibTeX` citation directly from the repository page (see `Cite this repository` in the upper right corner of this page). The fields we include here are the minimum recommended in the [AstroBetter post](https://www.astrobetter.com/blog/2019/07/01/citing-astronomy-software-inline-text-examples/) on citing astronomical software with no DOI. Please review the recommendations therein if you would like to add more information to the citation. Additional information about `CITATION.cff` files can be found [here](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files).   
 
-6. Edit the `README.md`. Add a short description of your package instead of this text.
+6. Add your code to the `src/new_package_name/` directory. All your code should be `*.py` files in this directory. Do not add other directories inside `src/` unless you know what you are doing. Add your tests to the `tests/` directory. Edit the `docs/index.rst` file to create documentation for your project. 
 
-7. Edit the `CITATION.cff` file to specify how you want your code cited. The `CITATION.cff` file allows you to generate a `BibTeX` citation directly from the repository page (see `Cite this repository` in the upper right corner of this page). The fields we include here are the minimum recommended in the [AstroBetter post](https://www.astrobetter.com/blog/2019/07/01/citing-astronomy-software-inline-text-examples/) on citing astronomical software with no DOI. Please review the recommendations therein if you would like to add more information to the citation. Additional information about `CITATION.cff` files can be found [here](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files).   
+🎉 You have a package. 
 
 # What not to Change
 
@@ -112,7 +112,20 @@ pip install git+https://github.com/mpi-astronomy/new_project.git
 
 **Commit early and often**
 
+As you make changes to your package, get into the habit of committing changes early and often. Every time you add a new function, a new test, edit the docstring:
+```
+git add new_module.py
+git commit -m "Added a function to reverse the sprocket of the whoosle."
+```
+And every few commits:
+```
+git push
+```
 
+`git` will not keep track of the files that `pip` creates during the installation, but once in a while it may be useful to clear them out and run `pip install .` again. The following command will delete all temporary files that `git` is not tracking:
+```
+git clean -xdf
+```
 
 **Testing your code**
 
@@ -133,24 +146,19 @@ To check for compliance with the Python style guide, fun `flake8`:
 flake8
 ```
 
-This repository come pre-set with contonuous integration using GitHub Actions. Every time you push a commit or make a pull request, all tests will be automatically run by GitHub. 
+This repository come pre-set with contonuous integration using GitHub Actions. Every time you push a commit or make a pull request, all tests will be automatically run by GitHub. On the GitHub page for your repository you should have an `Action` tab (forth from the left). This tab will show you the test results. You can disable/enable actions as shown [here](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow). 
 
 **Creating documentation**
 
+If/when you want to update the auto-generated `sphinx` documentation, you can edit the `docs/index.rst` file. This file is in `reStructuredText` format. More information on making your docs pretty is available in the [`sphinx` docs](https://www.sphinx-doc.org/en/master/tutorial/index.html).
 
-**
-
-This will create and installation such that you can keep editing the files. 
-
-```pip install -e ".[tests]"
-
-git clean -xdf
-pip install .
-pip install -e .
-
-pip install -e ".[docs]"
-flake8 
-
-
+To generate the documentation you need to first install the dependencies and then make the pages:
 ```
+pip install -e ".[docs]"
+cd docs/
+make html
+open _build/html/index.html
+```
+`sphinx` can also generate a PDF of your docs, but this is left as an exercise for the user.
 
+This repository is also set to auto-generate an HTML page with the documentation. The example documentation page for this repository can be found at [https://mpi-astronomy.github.io/mpia-python-template/](https://mpi-astronomy.github.io/mpia-python-template/).
