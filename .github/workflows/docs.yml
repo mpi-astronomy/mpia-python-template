@@ -6,8 +6,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-#    strategy:
-#      python-version: "3.8"
 
     steps:  
     - name: Checkout code
@@ -16,11 +14,15 @@ jobs:
         persist-credentials: false 
         fetch-depth: 0 
 
-    - name: setup python
-      working-directory: ./
+    - name: Set up Python 
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.9"
+
+
+    - name: Install docs dependencies
       run: |
         pip install --upgrade pip
-        pip install .
         pip install ".[docs]"
 
     - name: Build docs
