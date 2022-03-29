@@ -122,7 +122,7 @@ And every few commits:
 git push
 ```
 
-`git` will not keep track of the files that `pip` creates during the installation, but once in a while it may be useful to clear them out and run `pip install .` again. The following command will delete all temporary files that `git` is not tracking:
+`git` will not keep track of the files that `pip` creates during the installation, but once in a while it may be useful to clear them out and run `pip install -e .` again. The following command will delete all temporary files that `git` is not tracking:
 ```
 git clean -xdf
 ```
