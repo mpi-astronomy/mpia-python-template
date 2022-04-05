@@ -8,7 +8,7 @@ packaged Python project which requires minimal set-up effort for the user. Follo
 
 This template does not assume GitHub tags, it is not set up for PyPi releases and it does not produce ReadTheDocs documentation, however such extensions can be easily added on to the template by motivated users. Please contact the template authors if you need help with these tasks.
 
-There is a lot of (sometimes contradictory) information on how to package a Python project. Here we have generally followed the [current recommendations] (https://packaging.python.org/en/latest/tutorials/packaging-projects/) of the Python Packaging Authority. 
+There is a lot of (sometimes contradictory) information on how to package a Python project. Here we have generally followed the [current recommendations](https://packaging.python.org/en/latest/tutorials/packaging-projects/) of the Python Packaging Authority. 
 
 # How to Use This Template
 
