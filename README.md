@@ -2,9 +2,9 @@
 
 This repository contains a Python template suitable for starting new projects. This template has three main goals:
 - To create a properly 
-packaged Python project which requires minimal set-up effort for the user. Following seven steps below you will have the structure of a python package in ~15 minutes.
-- To encourage proper testing. This template includes a GitHub actions workflow, `.github/workflows/ci.yml`, that will run continuous integration on the `tests` directory. 
-- To encourage code and package documentation. This template includes pre-configured documentation in the `docs` directory which will automatically pull the information from the code docstrings. A GitHub actions workflow, `.github/workflows/docs.yml`, also published the documentation to a GitHub Pages webpage at every push or pull request.
+packaged Python project which requires minimal set-up effort for the user. Following the seven steps below you will have the structure of a python package in ~15 minutes.
+- To encourage proper testing. This template includes a GitHub actions workflow, `.github/workflows/ci.yml`, that will run continuous integration on the `tests` directory at every push or pull request. 
+- To encourage code and package documentation. This template includes pre-configured documentation in the `docs` directory which will automatically pull the information from the code docstrings. A GitHub actions workflow, `.github/workflows/docs.yml`, also publishes the documentation to a GitHub Pages webpage at every push or pull request.
 
 This template does not assume GitHub tags, it is not set up for PyPi releases and it does not produce ReadTheDocs documentation, however such extensions can be easily added on to the template by motivated users. Please contact the template authors if you need help with these tasks.
 
