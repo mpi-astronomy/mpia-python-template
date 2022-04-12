@@ -7,7 +7,15 @@ around the globe with a diverse set of skills, personalities, and experiences.
 It is through these differences that our community experiences success and
 continued growth.
 
-As members of the `mpi-astronomy` community:
+All Max Planck researchers are bound to adhere to the 
+[Max Plack Society Code of Conduct](https://www.mpg.de/14172230/code-of-conduct.pdf). 
+All MPIA employees should attach importance to creating a respectful and healthy atmosphere 
+and a level playing field for research and work. The goal is to ensure good working conditions 
+for everyone and to provide the basis for individual job satisfaction, personal development, 
+motivation, collegiality and positive interpersonal relations. The MPIA Code of Conduct is 
+specified in the MPIA Work Agreement.
+
+Furthermore, as members of the `mpi-astronomy` community:
 
 1. We pledge to treat all people with respect and provide a harassment- and bullying-free environment, regardless of sex, sexual orientation and/or gender identity, disability, physical appearance, body size, race, nationality, ethnicity, and religion. In particular, sexual language and imagery, sexist, racist, or otherwise exclusionary jokes are not appropriate.
 2. We pledge to respect the work of others by recognizing acknowledgment/citation requests of original authors. As authors, we pledge to be explicit about how we want our own work to be cited or acknowledged.
@@ -16,17 +24,8 @@ As members of the `mpi-astronomy` community:
 5. We pledge to be conscientious of the perceptions of the wider community and to respond to criticism respectfully. We will strive to model behaviors that encourage productive debate and disagreement, both within our community and where we are criticized. We will treat those outside our community with the same respect as people within our community.
 6. We pledge to help the entire community follow the code of conduct, and to not remain silent when we see violations of the code of conduct. 
  
- 
-This code of conduct applies to all community situations online and offline, including mailing lists, forums, social media, conferences, meetings, associated social events, and one-to-one interactions.
+These codes of conduct apply to all community situations online and offline, including mailing lists, forums, social media, conferences, meetings, associated social events, and one-to-one interactions.
 
-
-All Max Planck researchers are bound to adhere to the 
-[Max Plack Society Code of Conduct](https://www.mpg.de/14172230/code-of-conduct.pdf). 
-All MPIA employees should attach importance to creating a respectful and healthy atmosphere 
-and a level playing field for research and work. The goal is to ensure good working conditions 
-for everyone and to provide the basis for individual job satisfaction, personal development, 
-motivation, collegiality and positive interpersonal relations. The MPIA Code of Conduct is 
-specified in the MPIA Work Agreement.
 
 **Reporting**: Any violations of the Code of Conduct should be reported to the 
 [MPIA Ombudsperson](https://www2.mpia-hd.mpg.de/homes/fendt/ombud.html). If this information
