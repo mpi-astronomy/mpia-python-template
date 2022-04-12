@@ -14,8 +14,11 @@ As members of the `mpi-astronomy` community:
 3. We pledge to welcome those interested in joining the community, and realize that including people with a variety of opinions and backgrounds will only serve to enrich our community. In particular, discussions relating to pros/cons of various technologies, programming languages, and so on are welcome, but these should be done with respect, taking proactive measure to ensure that all participants are heard and feel confident that they can freely express their opinions.
 4. We pledge to welcome questions and answer them respectfully, paying particular attention to those new to the community. We pledge to provide respectful criticisms and feedback in forums, especially in discussion threads resulting from code contributions.
 5. We pledge to be conscientious of the perceptions of the wider community and to respond to criticism respectfully. We will strive to model behaviors that encourage productive debate and disagreement, both within our community and where we are criticized. We will treat those outside our community with the same respect as people within our community.
-6. We pledge to help the entire community follow the code of conduct, and to not remain silent when we see violations of the code of conduct. We will take action when members of our community violate this code such as such as contacting conduct@stsci.edu (all emails sent to this address will be treated with the strictest confidence) or talking privately with the person.
+6. We pledge to help the entire community follow the code of conduct, and to not remain silent when we see violations of the code of conduct. 
+ 
+ 
 This code of conduct applies to all community situations online and offline, including mailing lists, forums, social media, conferences, meetings, associated social events, and one-to-one interactions.
+
 
 All Max Planck researchers are bound to adhere to the 
 [Max Plack Society Code of Conduct](https://www.mpg.de/14172230/code-of-conduct.pdf). 
@@ -27,10 +30,11 @@ specified in the MPIA Work Agreement.
 
 **Reporting**: Any violations of the Code of Conduct should be reported to the 
 [MPIA Ombudsperson](https://www2.mpia-hd.mpg.de/homes/fendt/ombud.html). If this information
-is not available, please reach out to the owners of the [`mpi-astronomy` GitHub organization](https://github.com/mpi-astronomy). 
+is not available to you, please reach out to the owners of the `mpi-astronomy` [GitHub organization](https://github.com/mpi-astronomy). 
 
 Parts of this code of conduct have been adapted from the Astropy and NumFOCUS codes of conduct:
 
 https://www.astropy.org/code_of_conduct.html
+
 https://www.numfocus.org/about/code-of-conduct/
 
