@@ -24,50 +24,53 @@ Click on the `Create Repository from Template` button.
 
 1. We recommend creating a new environment for your project. This will allow you to track dependencies a lot easier. There are several different ways to do this (`virtualenv`, `pipenv`). Here we show an example with `conda`:
 
-```
-conda create --name new_environment python
-conda activate new_environment
-```
-Do not install dependencies that are necessary for your code with `conda`. All dependencies should be specified in the `setup.cfg` files (see step 2). If you need some libraries to do diagnostic work, you can install them now (e.g., `pip install numpy matplotlib ipython`) but make sure that they are included in `setup.cfg` if your package needs them.  We strongly recommend using `pip` for installation rather than `conda`. Note: if you do not have `conda` installed, we recommend [`miniconda`](https://docs.conda.io/en/latest/miniconda.html).
+        ```
+        conda create --name new_environment python
+        conda activate new_environment
+        ```
+    Do not install dependencies that are necessary for your code with `conda`. All dependencies should be specified in the `setup.cfg` files (see step 2). If you need some libraries to do diagnostic work, you can install them now (e.g., `pip install numpy matplotlib ipython`) but make sure that they are included in `setup.cfg` if your package needs them.  We strongly recommend using `pip` for installation rather than `conda`. Note: if you do not have `conda` installed, we recommend [`miniconda`](https://docs.conda.io/en/latest/miniconda.html).
 
-2. Make a copy of the repository on your computer:
+2. Make a copy of the repository on your computer. Click on the green `Code` button and copy the HTTPS or SSH link, depending on how you authenticate with GitHub.
+        `git clone https://github.com/mpi-astronomy/new_project.git`
 
-`git clone git@github.com:mpi-astronomy/new_project.git`
+    or
 
-If you have not set us SSH keys on your machine, then follow the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+        `git clone git@github.com:mpi-astronomy/new_project.git`
+
+    If you have not set up HTTPS or SSH authentication for GitHub on your computer, then follow the instructions [here for HTTPS](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or [here for SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
 3. Edit the `setup.cfg` file. 
 
-Specifically change the following lines:
+    Specifically change the following lines:
 
-```
-name = new_package_name
-version = 0.0.1
-author = Your Name
-author_email = your.name@example.com
-description = A small example package to do X and Y
-url = https://github.com/mpi-astronomy/new_project
-project_urls =
-    Bug Tracker = https://github.com/mpi-astronomy/new_project/issues
-    Source Code = https://github.com/mpi-astronomy/new_project
-```
+        ```
+        name = new_package_name
+        version = 0.0.1
+        author = Your Name
+        author_email = your.name@example.com
+        description = A small example package to do X and Y
+        url = https://github.com/mpi-astronomy/new_project
+        project_urls =
+            Bug Tracker = https://github.com/mpi-astronomy/new_project/issues
+            Source Code = https://github.com/mpi-astronomy/new_project
+        ```
 
-The `name` here will be the name of your package, it does not have to be the same as the name of the repository (as shown here). This will be the name used to import your package once installed. 
+    The `name` here will be the name of your package, it does not have to be the same as the name of the repository (as shown here). This will be the name used to import your package once installed. See the Python style guide [here](https://peps.python.org/pep-0008/#:~:text=Modules%20should%20have%20short%2C%20all,use%20of%20underscores%20is%20discouraged.) for package naming conventions (tl;dr: use lower case letters and underscores only).
 
-The `version` variable must be manually incremented. There are only two places where you should set the version: here and in the `CITATION.cff` file (see below). Make sure you increment them both.  
+    The `version` variable must be manually incremented. There are only two places where you should set the version: here and in the `CITATION.cff` file (see below). Make sure you increment them both.  
 
-As you develop your code, you will need to specify any dependencies. Add any new dependencies after 
-line 28 in `setup.cfg`. 
+    As you develop your code, you will need to specify any dependencies. Add any new dependencies after 
+    line 28 in `setup.cfg`. 
 
-Test and documentation dependencies can be specified in the appropriate sections.
+    Test and documentation dependencies can be specified in the appropriate sections.
 
 4. Rename your package. 
 
-If you chose a different name for your package in `name` you should now rename your directory name as well. For example, in the previous step I changed the name of this package from the default `my_package` to `new_package_name`. Here we rename the directory too:
-```
-cd src/
-git mv my_package new_package_name
-```
+    If you chose a different name for your package in `name` you should now rename your directory name as well. For example, in the previous step I changed the name of this package from the default `my_package` to `new_package_name`. Here we rename the directory too:
+        ```
+        cd src/
+        git mv my_package new_package_name
+        ```
 
 5. Edit the `README.md`. Add a short description of your package instead of this text.
 
@@ -93,9 +96,10 @@ Once you have made a local copy of the repository, you can install the package a
 
 With the package structure used here, you do not have to point Python to the location of your package. You absolutely SHOULD NOT be adding the package directory to your `$PYTHONPATH`. Instead, you can use `pip` to install it locally:
 ```
-pip install -e ~/path/to/new_project
+cd ~/path/to/new_project
+pip install -e .
 ```
-or `pip install -e .` if you are already in the `new_project` directory. `pip` will install all the dependencies specified in the `setup.cfg` file. The `-e` flag makes the install editable which means that you do not have to install the package again and again after each change. Changes to your files inside the project folder will automatically reflect in changes on your installed package. If you are working in an interactive environment (`ipython`, `Jupyter`) you will need to re-import any modules that have changed. For example, after editing `module_x.py` you will need to do the following to have the changes available in the Python interpreter:
+`pip` will install all the dependencies specified in the `setup.cfg` file. The `-e` flag makes the install editable which means that you do not have to install the package again and again after each change. Changes to your files inside the project folder will automatically reflect in changes on your installed package. If you are working in an interactive environment (`ipython`, `Jupyter`) you will need to re-import any modules that have changed. For example, after editing `module_x.py` you will need to do the following to have the changes available in the Python interpreter:
 
 ```
 import importlib
@@ -106,7 +110,8 @@ An accessible description of `pip install` can be found in [here](https://www.re
 
 To install a non-editable version, do:
 ```
-pip install ~/path/to/new_project
+cd ~/path/to/new_project
+pip install .
 ```
 This is how you can use your package once you are no longer developing it. Any users who are not contributing code can installing your package with:
 ```
@@ -124,8 +129,6 @@ And every few commits:
 ```
 git push
 ```
-
-`git` will not keep track of the files that `pip` creates during the installation, but once in a while it may be useful to clear them out and run `pip install -e .` again. 
 
 **Testing your code**
 
@@ -150,7 +153,7 @@ This repository come pre-set with continuous integration using GitHub Actions. E
 
 **Creating documentation**
 
-If/when you want to update the auto-generated `sphinx` documentation, you can edit the `docs/index.rst` file. This file is in `reStructuredText` format. More information on making your docs pretty is available in the [`sphinx` docs](https://www.sphinx-doc.org/en/master/tutorial/index.html).
+If/when you want to update the auto-generated `sphinx` documentation, you can edit the `docs/index.rst` file. This file is in reStructuredText format. More information on making your docs pretty is available in the `sphinx` [docs](https://www.sphinx-doc.org/en/master/tutorial/index.html).
 
 To generate the documentation, you need to first install the dependencies and then make the pages:
 ```
