@@ -24,18 +24,18 @@ Click on the `Create Repository from Template` button.
 
 1. We recommend creating a new environment for your project. This will allow you to track dependencies a lot easier. There are several different ways to do this (`virtualenv`, `pipenv`). Here we show an example with `conda`:
 
-        ```
         conda create --name new_environment python
         conda activate new_environment
-        ```
-    Do not install dependencies that are necessary for your code with `conda`. All dependencies should be specified in the `setup.cfg` files (see step 2). If you need some libraries to do diagnostic work, you can install them now (e.g., `pip install numpy matplotlib ipython`) but make sure that they are included in `setup.cfg` if your package needs them.  We strongly recommend using `pip` for installation rather than `conda`. Note: if you do not have `conda` installed, we recommend [`miniconda`](https://docs.conda.io/en/latest/miniconda.html).
+        
+    Do not install dependencies that are necessary for your code with `conda`. All dependencies should be specified in the `setup.cfg` files (see step 2). If you need some libraries to do diagnostic work, you can install them now (e.g., `pip install numpy matplotlib ipython`) but make sure that they are included in `setup.cfg` if your package needs them.  We recommend using `pip` for installation rather than `conda` (see some notes on the differences [here](https://www.anaconda.com/blog/understanding-conda-and-pip)), unless you need the binaries for a given library. Note: if you do not have `conda` installed, we recommend [`miniconda`](https://docs.conda.io/en/latest/miniconda.html).
 
 2. Make a copy of the repository on your computer. Click on the green `Code` button and copy the HTTPS or SSH link, depending on how you authenticate with GitHub.
-        `git clone https://github.com/mpi-astronomy/new_project.git`
+
+        git clone https://github.com/mpi-astronomy/new_project.git
 
     or
 
-        `git clone git@github.com:mpi-astronomy/new_project.git`
+        git clone git@github.com:mpi-astronomy/new_project.git
 
     If you have not set up HTTPS or SSH authentication for GitHub on your computer, then follow the instructions [here for HTTPS](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or [here for SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
@@ -43,7 +43,6 @@ Click on the `Create Repository from Template` button.
 
     Specifically change the following lines:
 
-        ```
         name = new_package_name
         version = 0.0.1
         author = Your Name
@@ -53,7 +52,6 @@ Click on the `Create Repository from Template` button.
         project_urls =
             Bug Tracker = https://github.com/mpi-astronomy/new_project/issues
             Source Code = https://github.com/mpi-astronomy/new_project
-        ```
 
     The `name` here will be the name of your package, it does not have to be the same as the name of the repository (as shown here). This will be the name used to import your package once installed. See the Python style guide [here](https://peps.python.org/pep-0008/#:~:text=Modules%20should%20have%20short%2C%20all,use%20of%20underscores%20is%20discouraged.) for package naming conventions (tl;dr: use lower case letters and underscores only).
 
@@ -67,10 +65,9 @@ Click on the `Create Repository from Template` button.
 4. Rename your package. 
 
     If you chose a different name for your package in `name` you should now rename your directory name as well. For example, in the previous step I changed the name of this package from the default `my_package` to `new_package_name`. Here we rename the directory too:
-        ```
+    
         cd src/
         git mv my_package new_package_name
-        ```
 
 5. Edit the `README.md`. Add a short description of your package instead of this text.
 
