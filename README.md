@@ -131,7 +131,7 @@ git push
 
 Ideally, you should be writing tests along with the new code. To test your code, first install the test dependencies:
 ```
-pip install -e ".[tests]"
+pip install -e ".[test]"
 ```
 
 Then run the tests from the `new_project` directory:
