@@ -5,10 +5,10 @@ a positive, inclusive, successful, and growing community.
 
 All Max Planck researchers are bound to adhere to the 
 [Max Plack Society Code of Conduct](https://www.mpg.de/14172230/code-of-conduct.pdf). 
-All MPIA employees should attach importance to creating a respectful and healthy atmosphere 
-and a level playing field for research and work. The MPIA Code of Conduct is 
-specified in the [MPIA Work Agreement](https://intranet.mpia.de/4404342/03-Works-agreement-code-of-conduct.pdf)(intranet link). MPIA staff are expected to adhere to these codes of conduct in
-online interactons as well as physical ones.  The goal is to ensure good working conditions 
+Furthermore, the MPIA Code of Conduct is 
+specified in the [MPIA Work Agreement](https://intranet.mpia.de/4404342/03-Works-agreement-code-of-conduct.pdf) (intranet link). MPIA staff are expected to adhere to these codes of conduct in
+online interactons as well as physical ones.  All MPIA employees should attach importance to creating a respectful and healthy atmosphere 
+and a level playing field for research and work. The goal is to ensure good working conditions 
 for everyone and to provide the basis for individual job satisfaction, personal development, 
 motivation, collegiality and positive interpersonal relations. 
 
