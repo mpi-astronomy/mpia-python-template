@@ -29,7 +29,7 @@ continued growth. As members of this global community:
 
 **Reporting**: Any violations of the Code of Conduct should be reported to the 
 [MPIA Ombudsperson](https://www2.mpia-hd.mpg.de/homes/fendt/ombud.html). If this information
-is not available to you, please reach out to the owners of the `mpi-astronomy` [GitHub organization](https://github.com/mpi-astronomy). 
+is not available to you, please reach out to the owners of the `mpi-astronomy` [GitHub organization](https://github.com/orgs/mpi-astronomy/people). 
 
 Parts of this code of conduct have been adapted from the Astropy and NumFOCUS codes of conduct:
 
