@@ -6,8 +6,7 @@ a positive, inclusive, successful, and growing community.
 All Max Planck researchers are bound to adhere to the 
 [Max Plack Society Code of Conduct](https://www.mpg.de/14172230/code-of-conduct.pdf). 
 Furthermore, the MPIA Code of Conduct is 
-specified in the [MPIA Work Agreement](https://intranet.mpia.de/4404342/03-Works-agreement-code-of-conduct.pdf) (intranet link). MPIA staff are expected to adhere to these codes of conduct in
-online interactons as well as physical ones.  All MPIA employees should attach importance to creating a respectful and healthy atmosphere 
+specified in the [MPIA Work Agreement](https://intranet.mpia.de/4404342/03-Works-agreement-code-of-conduct.pdf) (intranet link). All MPIA employees should attach importance to creating a respectful and healthy atmosphere 
 and a level playing field for research and work. The goal is to ensure good working conditions 
 for everyone and to provide the basis for individual job satisfaction, personal development, 
 motivation, collegiality and positive interpersonal relations. 
@@ -25,7 +24,7 @@ continued growth. As members of this global community:
 5. We pledge to be conscientious of the perceptions of the wider community and to respond to criticism respectfully. We will strive to model behaviors that encourage productive debate and disagreement, both within our community and where we are criticized. We will treat those outside our community with the same respect as people within our community.
 6. We pledge to help the entire community follow the code of conduct, and to not remain silent when we see violations of the code of conduct. 
  
-These codes of conduct apply to all community situations online and offline, including mailing lists, forums, social media, conferences, meetings, associated social events, and one-to-one interactions.
+**These codes of conduct apply to all community situations online and offline, including mailing lists, forums, social media, conferences, meetings, associated social events, and one-to-one interactions.**
 
 
 **Reporting**: Any violations of the Code of Conduct should be reported to the 
