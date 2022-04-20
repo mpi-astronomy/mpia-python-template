@@ -27,9 +27,10 @@ continued growth. As members of this global community:
 **These codes of conduct apply to all community situations online and offline, including mailing lists, forums, social media, conferences, meetings, associated social events, and one-to-one interactions.**
 
 
-**Reporting**: Any violations of the Code of Conduct should be reported to the 
-[MPIA Ombudsperson](https://www2.mpia-hd.mpg.de/homes/fendt/ombud.html). If this information
-is not available to you, please reach out to the owners of the `mpi-astronomy` [GitHub organization](https://github.com/orgs/mpi-astronomy/people). 
+**Reporting**: Any violations of the Code of Conduct should be reported to the owners of the `mpi-astronomy` [GitHub organization](https://github.com/orgs/mpi-astronomy/people). As community leaders we are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful. All community leaders are obligated to respect the privacy and security of the reporter of any incident.
+
+**Enforcement**: We follow the enforcement guidelines of the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/). For MPIA employees, the matter will be referred to internal authorities. 
+For external people, the decision will be made by the owners of the github organisation in consultation with the MPIA directorate.
 
 Parts of this code of conduct have been adapted from the Astropy and NumFOCUS codes of conduct:
 
