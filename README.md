@@ -81,7 +81,7 @@ Click on the `Create Repository from Template` button.
 
 1. Do not change the `LICENSE` file and definitely do not delete it. For more information, see [this article](https://www.astrobetter.com/blog/2014/03/10/the-whys-and-hows-of-licensing-scientific-code/). 
 
-2. If the copy is within the `mpi-astronomy` GitHub organization, do not edit the `CODE_OF_CONDUCT.md` file. Is the copy is under your personal account, please customize the `CODE_OF_CONDUCT.md` file. One easy way to do that is to remove the text in square braces and to edit the reporting section to read "Any violations of the Code of Conduct should be reported to the owners of this repository."
+2. If the copy is within the `mpi-astronomy` GitHub organization, do not edit the `CODE_OF_CONDUCT.md` file. If the copy is under your personal account, please customize the `CODE_OF_CONDUCT.md` file. One easy way to do that is to remove the text in square braces and to edit the reporting section to read "Any violations of the Code of Conduct should be reported to the owners of this repository."
 
 3. You should not have to change `pyproject.toml` (unless you know what you are doing). In this setup you do not need to have `setup.py` or `requirements.txt` files. All your requirements should be listed in the `setup.cfg` file. If you have a more complex package that requires that things happen at installation, you may also need to create a `setup.py` file, but we are going to keep things here simple.  
 
