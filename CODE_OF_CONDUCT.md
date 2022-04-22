@@ -3,15 +3,13 @@ enforced code of conduct and expect everyone in our community to follow these
 guidelines when interacting with others in all forums. Our goal is to keep ours
 a positive, inclusive, successful, and growing community. 
 
-[ All Max Planck researchers are bound to adhere to the 
-[Max Plack Society Code of Conduct](https://www.mpg.de/14172230/code-of-conduct.pdf). 
-Furthermore, the MPIA Code of Conduct is 
-specified in the [MPIA Work Agreement](https://intranet.mpia.de/4404342/03-Works-agreement-code-of-conduct.pdf) (intranet link). All MPIA employees should attach importance to creating a respectful and healthy atmosphere 
-and a level playing field for research and work. The goal is to ensure good working conditions 
+[ All Max Planck Institute for Astronomy (MPIA) researchers are bound to adhere to the 
+[Max Plack Society Code of Conduct](https://www.mpg.de/14172230/code-of-conduct.pdf) and the [MPIA Work Agreement](https://intranet.mpia.de/4404342/03-Works-agreement-code-of-conduct.pdf) (intranet link). All MPIA employees should attach importance to creating a respectful and healthy atmosphere 
+and a level playing field for research and work. Their goal is to ensure good working conditions 
 for everyone and to provide the basis for individual job satisfaction, personal development, 
 motivation, collegiality and positive interpersonal relations. ]
 
-[ Interactions on GitHub are not limited to those between MPIA/MPG employees.] The community of
+[ Interactions on GitHub are not limited to those between MPIA employees.] The community of
 participants in open source astronomy projects is made up of members from
 around the globe with a diverse set of skills, personalities, and experiences.
 It is through these differences that our community experiences success and
@@ -26,11 +24,10 @@ continued growth. As members of this global community:
  
 **This code of conduct applies to all community situations online and offline, including mailing lists, forums, social media, conferences, meetings, associated social events, and one-to-one interactions.**
 
+**Reporting**: Please report any violations of the Code of Conduct to the owners of the [`mpi-astronomy` [GitHub organization](https://github.com/orgs/mpi-astronomy/people)]. As community leaders we are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful. All community leaders are obligated to respect the privacy and security of the reporter of any incident.
 
-**Reporting**: Any violations of the Code of Conduct should be reported to the owners of the [`mpi-astronomy` [GitHub organization](https://github.com/orgs/mpi-astronomy/people)]. As community leaders we are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful. All community leaders are obligated to respect the privacy and security of the reporter of any incident.
-
-**Enforcement**: We follow the enforcement guidelines of the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/). [For MPIA employees, the matter will be referred to contacts listed in Section 7 of the [MPIA Work Agreement](https://intranet.mpia.de/4404342/03-Works-agreement-code-of-conduct.pdf) (intranet link). 
-For external people, the decision will be made by the owners of the github organisation in consultation with the MPIA directorate.]
+**Enforcement**: We follow the enforcement guidelines of the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/). [For MPIA employees, the matter will be referred to the contacts listed in Section 7 of the [MPIA Work Agreement](https://intranet.mpia.de/4404342/03-Works-agreement-code-of-conduct.pdf) (intranet link). 
+For external people, the owners of the GitHub organization will decide in consultation with the MPIA directorate.]
 
 Parts of this code of conduct have been adapted from the Astropy and NumFOCUS codes of conduct:
 
