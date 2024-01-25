@@ -1,5 +1,7 @@
 import pytest
+
 from my_package.example import add_one
+
 
 def test_type():
     """
@@ -8,6 +10,7 @@ def test_type():
     assert add_one(1) == 2
     assert add_one(1.1) == 2.1
     assert add_one('1') == '11'
+
 
 def test_error():
     """
