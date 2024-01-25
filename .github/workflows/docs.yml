@@ -1,6 +1,6 @@
 name: sphinxdocumentation
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   build:
@@ -9,21 +9,20 @@ jobs:
 
     steps:  
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
-        persist-credentials: false 
         fetch-depth: 0 
 
     - name: Set up Python 
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
-        python-version: "3.9"
+        python-version: "3.11"
 
 
     - name: Install docs dependencies
       run: |
         pip install --upgrade pip
-        pip install ".[docs]"
+        pip install -e ".[docs]"
 
     - name: Build docs
       working-directory: ./docs
