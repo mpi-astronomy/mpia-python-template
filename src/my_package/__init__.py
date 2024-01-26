@@ -1,11 +1,7 @@
-import sys
+from . import _version
 
-if sys.version_info >= (3, 8):
-    from importlib import metadata
-else:
-    import importlib_metadata as metadata
 
 try:
-    __version__ = metadata.version(__package__ or __name__)
-except:
+    __version__ = _version.version
+except Exception:
     __version__ = "dev"

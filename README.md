@@ -41,28 +41,49 @@ Click on the `Create Repository from Template` button.
 
     If you have not set up HTTPS or SSH authentication for GitHub on your computer, then follow the instructions [here for HTTPS](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or [here for SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
-3. Edit the `setup.cfg` file. 
+3. Edit the `pyproject.toml` file.
 
     Specifically change the following lines:
 
-        name = new_package_name
-        version = 0.0.1
-        author = Your Name
-        author_email = your.name@example.com
-        description = A small example package to do X and Y
-        url = https://github.com/mpi-astronomy/new_project
-        project_urls =
-            Bug Tracker = https://github.com/mpi-astronomy/new_project/issues
-            Source Code = https://github.com/mpi-astronomy/new_project
+        [project]
+        name = "new_package_name"
+        authors = [{name = "Example Author", email = "author@mpia.de"}]
+        description = "An example package"
 
-    The `name` here will be the name of your package, it does not have to be the same as the name of the repository (as shown here). This will be the name used to import your package once installed. See the Python style guide [here](https://peps.python.org/pep-0008/#:~:text=Modules%20should%20have%20short%2C%20all,use%20of%20underscores%20is%20discouraged.) for package naming conventions (tl;dr: use lower case letters and underscores only).
+        [project.urls]
+        "Bug Tracker" = "https://github.com/mpi-astronomy/new_project/issues"
+        "Source Code" = "https://github.com/mpi-astronomy/new_project"
 
-    The `version` variable must be manually incremented. There are only two places where you should set the version: here and in the `CITATION.cff` file (see below). Make sure you increment them both.  
+        [tool.setuptools_scm]
+        write_to = "src/new_package_name/_version.py"
 
-    As you develop your code, you will need to specify any dependencies. Add any new dependencies after 
-    line 28 in `setup.cfg`. 
 
-    Test and documentation dependencies can be specified in the appropriate sections.
+    The `my_package_name` here will be the name of your package, it does not have to be the same as the name of the repository (as shown here). This will be the name used to import your package once installed. See the Python style guide [here](https://peps.python.org/pep-0008/#:~:text=Modules%20should%20have%20short%2C%20all,use%20of%20underscores%20is%20discouraged.) for package naming conventions (tl;dr: use lower case letters and underscores only).
+
+    As you develop your code, you will need to specify any dependencies, i.e. packages from which you have direct imports. Add any new dependencies here (you get numpy for free):
+
+        dependencies = [
+            "numpy",
+        ]
+
+    Test and documentation dependencies can be specified here:
+
+        [project.optional-dependencies]
+        docs = [
+            "sphinx",
+            "sphinx-automodapi",
+            "numpydoc",
+        ]
+        test = [
+            "pytest",
+            "pytest-doctestplus",
+            "flake8",
+            "flake8-pyproject",
+            "codecov",
+            "pytest-cov",
+        ]
+
+    Edit as needed.
 
 4. Rename your package. 
 
@@ -85,11 +106,17 @@ Click on the `Create Repository from Template` button.
 
 2. If the copy is within the `mpi-astronomy` GitHub organization, do not edit the `CODE_OF_CONDUCT.md` file. If the copy is under your personal account, please customize the `CODE_OF_CONDUCT.md` file. One easy way to do that is to remove the text in square braces and to edit the reporting section to read "Any violations of the Code of Conduct should be reported to the owners of this repository."
 
-3. You should not have to change `pyproject.toml` (unless you know what you are doing). In this setup you do not need to have `setup.py` or `requirements.txt` files. All your requirements should be listed in the `setup.cfg` file. If you have a more complex package that requires that things happen at installation, you may also need to create a `setup.py` file, but we are going to keep things here simple.  
+3. Using this Python packaging template gives you the most up-to-date way to package your Python code.  You do not need to have `setup.py`, `setup.cfg` or `requirements.txt` files.  The `setup.*` files are legacy formats that are now deprecated for most use cases. All your requirements should be listed in the `pyproject.toml` file. If you have a more complex package with C or Fortran code that needs to be compiled during install, you may also need to create a `setup.py` file, but we are going to keep things here simple.
 
 # Then What?
 
-Once you have made a local copy of the repository, you can install the package and start developing, testing and documenting it. 
+Once you have made a local copy of the repository, you can install the package and start developing, testing and documenting it.
+
+# Versioning Your Package
+
+This package template does versioning for your package automatically using `setuptools-scm` which generates a version based on git tags in the standard semantic versioning format A.B.c.  For more information see [setuptools-scm]() and Python packaging [Version specifiers](https://packaging.python.org/en/latest/specifications/version-specifiers/#version-specifiers).
+
+This means that when you have version of your package that you want to tag and release, make sure HEAD is pointing the the commit where you want to tag, and use `git tag A.B.c` to tag it with a proper semantic version.  The next time you install the package, it should show you the updated version based on your tag.
 
 **Installation**
 
@@ -98,14 +125,14 @@ With the package structure used here, you do not have to point Python to the loc
 cd ~/path/to/new_project
 pip install -e .
 ```
-`pip` will install all the dependencies specified in the `setup.cfg` file. The `-e` flag makes the install editable which means that you do not have to install the package again and again after each change. Changes to your files inside the project folder will automatically reflect in changes on your installed package. If you are working in an interactive environment (`ipython`, `Jupyter`) you will need to re-import any modules that have changed. For example, after editing `module_x.py` you will need to do the following to have the changes available in the Python interpreter:
+`pip` will install all the dependencies specified in the `pyproject.toml` file. The `-e` flag makes the install editable which means that you do not have to install the package again and again after each change. Changes to your files inside the project folder will automatically reflect in changes on your installed package. If you are working in an interactive environment (`ipython`, `Jupyter`) you will need to re-import any modules that have changed. For example, after editing `module_x.py` you will need to do the following to have the changes available in the Python interpreter:
 
 ```
 import importlib
 importlib.reload(module_x)
 ```
 
-An accessible description of `pip install` can be found in [here](https://www.reddit.com/r/learnpython/comments/ayx7za/how_does_pip_install_e_work_is_there_a_specific/).
+An accessible description of `pip install` can be found [here](https://www.reddit.com/r/learnpython/comments/ayx7za/how_does_pip_install_e_work_is_there_a_specific/).
 
 To install a non-editable version, do:
 ```
@@ -114,7 +141,7 @@ pip install .
 ```
 This is how you can use your package once you are no longer developing it. Any users who are not contributing code can installing your package with:
 ```
-pip install git+https://github.com/mpi-astronomy/new_project.git
+pip install git+https://github.com/mpi-astronomy/new_project
 ```
 
 **Commit early and often**
@@ -131,24 +158,30 @@ git push
 
 **Testing your code**
 
-Ideally, you should be writing tests along with the new code. To test your code, first install the test dependencies:
+Ideally, you should be writing tests along with the new code. To test your code, first install the package in editable mode with the optional test dependencies:
 ```
 pip install -e ".[test]"
 ```
 
-Then run the tests from the `new_project` directory:
+Then run the tests from the git repo root directory:
 ```
-pytest --cov=.
+pytest --cov=src/<my_package> tests
 ```
 
-The `--cov=.` flag generates a report on how much of you code is covered by tests. Ideally this should be >80%.
+changing <my_package> to whatever your package name is.  This generates a report on how much of your code is covered by tests. Ideally this should be >80%.
+
+**Checking Code Style**
 
 To check for compliance with the Python style guide, run `flake8`:
 ```
 flake8
 ```
 
-This repository come pre-set with continuous integration using GitHub Actions. Every time you push a commit or make a pull request, all tests will be automatically run by GitHub. On the GitHub page for your repository you should have an `Action` tab (forth from the left). This tab will show you the test results. While you can (and should) run the test suite locally, these runs are usually only on your operating system against one version of python. The advantage of CI is that you can test your code against different versions of python, different versions of key libraries and different operating systems. Here we have set up a simple test matrix which runs against four different versions of python. You can make the CI more complex if you need. You can disable/enable actions as shown [here](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow) or by deleting the `.github/workflows/ci.yml` file (use `git rm`). 
+This will do basic linting of your code, making sure you following best coding practices and will often also find bugs.
+
+**Continuous Integration**
+
+This repository come pre-set with continuous integration using GitHub Actions. Every time you push a commit or make a pull request, all tests will be automatically run by GitHub. On the GitHub page for your repository you should have an `Action` tab (forth from the left). This tab will show you the test results. While you can (and should) run the test suite locally, these runs are usually only on your operating system against one version of python. The advantage of CI is that you can test your code against different versions of python, different versions of key libraries and different operating systems. Here we have set up a simple test matrix which runs against 3 different versions of python. You can make the CI more complex if you need. You can disable/enable actions as shown [here](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow) or by deleting the `.github/workflows/ci.yml` file (use `git rm`).
 
 **Creating documentation**
 
