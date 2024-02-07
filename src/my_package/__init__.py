@@ -1,7 +1,6 @@
-from . import _version
-
+from importlib import metadata
 
 try:
-    __version__ = _version.version
-except Exception:
+    __version__ = metadata.version(__package__ or __name__)
+except:
     __version__ = "dev"

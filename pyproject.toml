@@ -1,5 +1,6 @@
 [project]
 name = "my_package"
+version = "0.0.1"
 authors = [{name = "Example Author", email = "author@mpia.de"}]
 description = "An example package"
 readme = "README.md"
@@ -13,7 +14,6 @@ requires-python = ">=3.9"
 dependencies = [
     "numpy",
 ]
-dynamic = ['version']
 
 [project.optional-dependencies]
 docs = [
@@ -43,9 +43,6 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools_scm]
-write_to = "src/my_package/_version.py"
-
 [tool.setuptools.packages.find]
 where = ["src"]
 
@@ -56,10 +53,5 @@ exclude = [
     '.tox',
     '.eggs',
     'build',
-    '*_version.py',
 ]
 
-[tool.coverage.run]
-omit = [
-    "_version.py",
-]
