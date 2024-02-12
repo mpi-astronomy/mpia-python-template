@@ -114,9 +114,11 @@ Once you have made a local copy of the repository, you can install the package a
 
 # Versioning Your Package
 
-This package template does versioning for your package automatically using `setuptools-scm` which generates a version based on git tags in the standard semantic versioning format A.B.c.  For more information see [setuptools-scm]() and Python packaging [Version specifiers](https://packaging.python.org/en/latest/specifications/version-specifiers/#version-specifiers).
+This package template does versioning for your package automatically using `setuptools-scm` which generates a version based on git tags in the standard semantic versioning format A.B.c.  For more information see [setuptools-scm](https://pypi.org/project/setuptools-scm/) and Python packaging [Version specifiers](https://packaging.python.org/en/latest/specifications/version-specifiers/#version-specifiers).
 
 This means that when you have version of your package that you want to tag and release, make sure HEAD is pointing the the commit where you want to tag, and use `git tag A.B.c` to tag it with a proper semantic version.  The next time you install the package, it should show you the updated version based on your tag.
+
+If you do not want to do the automatic versioning (your code is not a git repo or you just want to do your own thing) then use the [`static_version`](https://github.com/mpi-astronomy/mpia-python-template/tree/static_version) branch of the repo. This branch can also be downloaded as a ZIP file and used locally. This is not the recommended workflow however. 
 
 **Installation**
 
