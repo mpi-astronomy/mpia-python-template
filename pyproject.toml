@@ -1,5 +1,6 @@
 [project]
 name = "my_package"
+version = "0.0.1"
 authors = [{name = "Example Author", email = "author@mpia.de"}]
 description = "An example package"
 readme = "README.md"
@@ -13,7 +14,16 @@ requires-python = ">=3.9"
 dependencies = [
     "numpy",
 ]
-dynamic = ['version']
+
+[project.urls]
+"Homepage" = "https://github.com/mpi-astronomy/mpia-python-template"
+
+[build-system]
+requires = [
+    "setuptools>=60",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
 
 [project.optional-dependencies]
 docs = [
@@ -30,22 +40,6 @@ test = [
     "pytest-cov",
 ]
 
-[project.urls]
-"Bug Tracker" = "https://github.com/mpi-astronomy/snowblind/issues"
-"Source Code" = "https://github.com/mpi-astronomy/snowblind"
-
-
-[build-system]
-requires = [
-    "setuptools>=60",
-    "setuptools_scm>=8.0",
-    "wheel",
-]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools_scm]
-write_to = "src/my_package/_version.py"
-
 [tool.setuptools.packages.find]
 where = ["src"]
 
@@ -56,10 +50,5 @@ exclude = [
     '.tox',
     '.eggs',
     'build',
-    '*_version.py',
 ]
 
-[tool.coverage.run]
-omit = [
-    "_version.py",
-]
